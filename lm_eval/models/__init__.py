@@ -5,6 +5,7 @@ from . import huggingface
 from . import textsynth
 from . import dummy
 from . import gguf
+from . import miniGPT
 
 MODEL_REGISTRY = {
     "hf": gpt2.HFLM,
@@ -16,7 +17,8 @@ MODEL_REGISTRY = {
     "anthropic": anthropic_llms.AnthropicLM,
     "textsynth": textsynth.TextSynthLM,
     "dummy": dummy.DummyLM,
-    "gguf": gguf.GGUFLM
+    "gguf": gguf.GGUFLM,
+    'minGPT': miniGPT.HFLM
 }
 
 
